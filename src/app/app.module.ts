@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ProjectItemComponent } from './project-item/project-item.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { TitleComponent } from './title/title.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     FooterComponent,
     ProjectItemComponent,
     NotFoundComponent,
+    TitleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
