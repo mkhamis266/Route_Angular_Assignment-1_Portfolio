@@ -1,1 +1,10 @@
-<h2>{{ componentTitle }} component</h2>
+<div class="text-center">
+  <h2 [style.color]="color">{{ componentTitle }} component</h2>
+  <div class="underline p-1">
+    <div [style.backgroundColor]="color" class="line"></div>
+    <div [style.color]="color" class="icon p-3">
+      <i class="fa-solid fa-star"></i>
+    </div>
+    <div [style.backgroundColor]="color" class="line"></div>
+  </div>
+</div>
