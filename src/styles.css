@@ -7,3 +7,8 @@
 .bg-second-color {
   background-color: var(--second-color);
 }
+
+router-outlet + *,
+router-outlet + * > div {
+  min-height: inherit;
+}

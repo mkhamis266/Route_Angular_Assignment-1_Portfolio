@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { CntactComponent } from './cntact/cntact.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectItemComponent } from './project-item/project-item.component';
+import { ContactComponent } from './contact/contact.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -17,16 +18,14 @@ import { ProjectItemComponent } from './project-item/project-item.component';
     HomeComponent,
     AboutComponent,
     PortfolioComponent,
-    CntactComponent,
+    ContactComponent,
     NavbarComponent,
     FooterComponent,
-    ProjectItemComponent
+    ProjectItemComponent,
+    NotFoundComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
