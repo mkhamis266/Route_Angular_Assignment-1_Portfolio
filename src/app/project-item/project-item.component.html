@@ -1,5 +1,5 @@
 <div class="card">
-  <div class="card-body p-0 position-relative">
+  <div class="card-body p-0 position-relative rounded overflow-hidden">
     <img [src]="imgSrc" class="img-fluid" />
     <div class="layer" data-bs-toggle="modal" data-bs-target="#imgModal">
       <i class="fa-solid fa-plus"></i>
@@ -7,22 +7,3 @@
   </div>
 </div>
 <!-- Modal trigger button -->
-
-<!-- Modal Body -->
-<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-<div
-  class="modal fade"
-  id="imgModal"
-  tabindex="-1"
-  data-bs-keyboard="false"
-  role="dialog"
-  aria-labelledby="modalTitleId"
-  aria-hidden="true"
->
-  <div
-    class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md"
-    role="document"
-  >
-    <img [src]="imgSrc" class="img-fluid" />
-  </div>
-</div>

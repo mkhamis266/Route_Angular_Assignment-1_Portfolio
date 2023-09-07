@@ -1,12 +1,32 @@
-<div class="d-flex align-items-center justify-content-center">
+<div class="d-flex align-items-center justify-content-center mb-5 pt-4">
   <div class="container">
     <div class="mb-3">
       <app-title [componentTitle]="title" [color]="color"></app-title>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <app-project-item></app-project-item>
+    <div class="row g-3">
+      <div *ngFor="let project of projects; let i = index" class="col-md-4">
+        <app-project-item
+          [imgSrc]="project.imgSrc"
+          (click)="selectedProjectIndex = i"
+        ></app-project-item>
       </div>
     </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="imgModal"
+  tabindex="-1"
+  data-bs-keyboard="false"
+  role="dialog"
+  aria-labelledby="modalTitleId"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md"
+    role="document"
+  >
+    <img [src]="projects[selectedProjectIndex].imgSrc" class="img-fluid" />
   </div>
 </div>
