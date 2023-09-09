@@ -1,0 +1,19 @@
+<div class="input-container">
+  <label
+    [for]="inputName"
+    class="text-success"
+    [ngClass]="{
+    'top-0': showLabel,
+  }"
+    >{{ inputName }}:</label
+  >
+  <br />
+  <input
+    class="form-control p-2 mb-3"
+    [id]="inputName"
+    [name]="inputName"
+    [placeholder]="inputName"
+    (input)="changeLabelState($event)"
+    [type]="type"
+  />
+</div>

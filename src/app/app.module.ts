@@ -12,6 +12,7 @@ import { ProjectItemComponent } from './project-item/project-item.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { TitleComponent } from './title/title.component';
+import { InputComponent } from './input/input.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { TitleComponent } from './title/title.component';
     ProjectItemComponent,
     NotFoundComponent,
     TitleComponent,
+    InputComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

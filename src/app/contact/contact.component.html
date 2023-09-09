@@ -1,1 +1,14 @@
-<p>cntact works!</p>
+<div class="d-flex align-items-center justify-content-center mb-5 pt-4">
+  <div class="container">
+    <div class="mb-3">
+      <app-title [componentTitle]="title" [color]="color"></app-title>
+    </div>
+    <form class="col-lg-6 mx-auto">
+      <app-input [inputName]="'userName'" [type]="'text'"></app-input>
+      <app-input [inputName]="'userAge'" [type]="'number'"></app-input>
+      <app-input [inputName]="'userEmail'" [type]="'email'"></app-input>
+      <app-input [inputName]="'userPassword'" [type]="'password'"></app-input>
+      <button (click)="onSubmit($event)" class="btn btn-success">Submit</button>
+    </form>
+  </div>
+</div>

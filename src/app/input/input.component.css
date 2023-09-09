@@ -1,0 +1,20 @@
+.input-container {
+  position: relative;
+}
+
+input {
+  position: relative;
+  border: 0;
+  border-bottom: 1px solid #dee2e6;
+  border-radius: 15px;
+  &:focus {
+    box-shadow: none;
+    border-color: #dee2e6;
+  }
+}
+
+label {
+  position: absolute;
+  top: 50%;
+  transition: all 0.5s ease-in-out;
+}

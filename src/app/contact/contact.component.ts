@@ -5,4 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css'],
 })
-export class ContactComponent {}
+export class ContactComponent {
+  title: string = 'Contact';
+  color: string = '#2c3e50';
+
+  onSubmit(event: Event) {
+    event.preventDefault();
+  }
+}
