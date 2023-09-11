@@ -13,7 +13,8 @@
     [id]="inputName"
     [name]="inputName"
     [placeholder]="inputName"
-    (input)="changeLabelState($event)"
+    [(ngModel)]="inputValue"
+    (input)="changeLabelState()"
     [type]="type"
   />
 </div>
