@@ -10,8 +10,8 @@ export class InputComponent {
   @Input() type: string = '';
   showLabel: boolean = false;
 
-  changeLabelState(event: any) {
-    if (event.target.value != '') {
+  changeLabelState(event: Event) {
+    if ((<HTMLInputElement>event.target).value != '') {
       this.showLabel = true;
     } else {
       this.showLabel = false;
